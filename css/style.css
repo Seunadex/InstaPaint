@@ -1,0 +1,158 @@
+body {
+	background-color: tan;
+}
+
+/*#canvas {
+	width: 50%;
+}*/
+
+canvas {
+  border: 1px solid black;
+  box-shadow: 1px 2px 3px blue;
+  background-color: white;
+  cursor: crosshair;
+  margin-top: -20px;
+  /*float: left;*/
+}
+
+nav {
+	background-color: #CD853F;
+
+}
+
+#col-lg-2 {
+	width: 100%;
+	height: 180px;
+	background-color: grey;
+	margin-top: -40px;
+}
+
+.box {
+	text-align: center;
+	text-shadow: 0px 1px 2px red;
+	box-shadow: 2px 2px 3px blue;
+	margin: 30px 7px;
+	float: left;
+	border-radius: 10px;
+	width: 250px;
+	height: 130px;
+	background-color: #9cdff8;
+	color: grey;
+	font-weight: bold;
+}
+#a, #b, #c, #d, #e, #f, #g, #h, #i, #j, #k, #l, #m, #n {
+	width: 20px;
+	height: 20px;
+	border: 1px solid grey;
+	float: left;
+	margin: 2px;
+	border-radius: 4px;
+	display: flex;
+}
+#a {
+	background-color: blue;
+}
+#b {
+	background-color: green;
+}
+#c {
+	background-color: red;
+}
+
+#d {
+	background-color: yellow;
+}
+
+#e {
+	background-color: purple;
+}
+
+#f {
+	background-color: grey;
+}
+#g {
+	background-color: maroon;
+}
+
+#h {
+	background-color: tan;
+}
+
+#i {
+	background-color: fuchsia;
+}
+
+#j {
+	background-color: lime;
+}
+
+#k {
+	background-color: lavender;
+}
+
+#l {
+	background-color: gold;
+}
+#m {
+	background-color: silver;
+}
+#n {
+	background-color: teal;
+}
+
+#label {
+	margin: 20px;
+}
+
+.toolTextStyle{
+	font-weight: bold;
+	text-shadow: 0px 1px 2px red;
+	color: grey;
+	padding-top: 10px;
+}
+.colorPalette input{
+	width: 50px;
+	height: 20px;
+	border: 0;
+	outline: 0;
+}
+
+.red {
+	background-color: red;
+}
+
+.blue {
+	background-color: blue;
+}
+
+.green {
+	background-color: green;
+}
+
+.colorPalette input:hover {
+	opacity: 0.5;
+	cursor: pointer;
+}
+.sizes {
+	padding-top: 10px;
+}
+
+/*#sizes {
+	text-align: center;
+	text-shadow: 0px 1px 1px red;
+	box-shadow: 2px 2px 3px blue;
+	margin: 30px;
+	float: left;
+	border-radius: 10px;
+	width: 190px;
+	height: 90px;
+	background-color: grey;
+	color: black;
+	font-weight: bold;
+}
+*/
+div input {
+	cursor: pointer;
+	border-radius: 10px;
+}
+

@@ -1,0 +1,140 @@
+body{
+	margin: 0px;
+}
+
+.brush {
+	background-image: url("../img/paints-and-brushes.jpg");
+	background-size: cover;
+	background-position: center center;
+	position: relative;
+	top: 0;
+	bottom: 0;
+	height: 100vh;
+}
+
+.brush-overlay {
+	position: absolute;
+	background-color: rgba(0, 0, 0, 0.5);
+	top: 0;
+	bottom: 0;
+	height: 100%;
+	width: 100%;
+	text-align: center;
+
+}
+
+.container {
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%
+
+}
+
+h1 {
+		margin-bottom: .5em;
+		font-size: 120px;
+		color: white;
+		margin-top: 150px;
+		font-family: "Comic Sans MS", cursive, sans-serif;
+		
+}
+
+.glow {
+	-webkit-animation-duration: 1s;
+	-webkit-animation-name: glow;
+	-webkit-animation-iteration-count: infinite;
+	animation-duration: 1s;
+	animation-name: glow;
+	animation-direction: alternate;
+	animation-iteration-count: infinite; 
+}
+
+@-webkit-keyframes glow {
+	from { text-shadow: #EEEE00 0 0 0px; }
+	to { text-shadow: #EEEE00 0 0 20px; }
+}
+
+a {
+	text-decoration: none;
+	color: white;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+}
+a.button{
+	font-size: 20px;
+	background-color: #3359df;
+	padding: 8px 40px 12px 40px !important;
+	box-shadow: 1px 1px 2px tan;
+	border-radius: 10px;
+	border: none;
+	margin-top: 20px;
+
+}
+
+a.button:hover {
+	background-color: #ff9;
+	color: #3359df;
+	border: 1px solid #3359df;
+	font-weight: bold;
+	box-shadow: 1px 2px 2px black;
+}
+
+p{
+	font-size: 30px;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	color: white;
+
+}
+.fa {
+	color: white;
+	margin-bottom: 20px;
+
+
+}
+
+@-moz-keyframes bounce {
+   0%, 15%, 25%, 80%, 100%  {
+    -moz-transform: translateY(0);
+    transform: translateY(0);
+  }
+  10% {
+    -moz-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  20% {
+    -moz-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+@-webkit-keyframes bounce {
+   0%, 15%, 25%, 80%, 100%  {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  10% {
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  20% {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+@keyframes bounce {
+  0%, 15%, 25%, 80%, 100% {
+    transform: translateY(0);
+  }
+  10% {
+    transform: translateY(-30px);
+  }
+  20% {
+    transform: translateY(-15px);
+  }
+}
+
+.bounce {
+  -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+}

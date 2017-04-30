@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+	  <title>InstanPaint v2.0 | Welcome</title>
+	  <meta name="" content="">
+	  <link rel="stylesheet" type="text/css" href="bootstrap-3.3.7/dist/css/bootstrap.min.css">
+	  <link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+  </head>
+<body>
+  	<header>
+  	<nav class="navbar navstyle navbar-static-top no-margin" role="navigation">
+  		<div class="container">
+  			<div class="navbar-header">
+  				<button type="button" class="navbar-toggle collapsed"
+            data-toggle="collapse" data-target="#mobile-display" aria-expanded="false">
+    					<span class="sr-only">Toggle navigation</span>
+    					<span class="icon-bar"></span>
+    					<span class="icon-bar"></span>
+    					<span class="icon-bar"></span>
+  				</button>
+  				<a href="/" class="navbar-brand">
+            <strong id="logo">InstaPaint</strong>
+          </a>
+  			</div>
+  		</div>
+  	</nav>
+	</header>
+
+<!--    Toolbox -->
+  <div id="col-lg-2" class="img-responsive">
+    <div id="tools" class="box"><caption>Tools</caption><br>
+      <button onclick="erase()" class="btn btn-success btn-sm glyphicon glyphicon-erase" title="erase" id="eraseDrawing"><input type="radio" name="shape" value="erase"></button>
+
+      <button class="btn btn-sm btn-danger drawingTool glyphicon glyphicon-remove-sign" title="clear" id="clearCanvas"></button>
+      <a class="btn btn-sm btn-info glyphicon glyphicon-floppy-save" title="download" id="saveBtn" download="canvasName.png" class="save_btn"></a>
+    </div>
+
+
+    <div id="shapes" class="box"><caption>Shapes</caption><br>
+         <span><input type="radio" name="shape" value="line" checked="checked"> Line</span>
+        <span><input type="radio" name="shape" value="circle"> Circle</span>
+        <span><input type="radio" name="shape" value="polygon"> Polygon</span>
+        <span><input type="radio" name="shape" value="triangle"> Triangle</span>
+        <span><input type="radio" name="shape" value="rectangle"> Rectangle</span>
+        <span><input type="radio" name="shape" value="curve"> Curve</span>
+
+    </div>
+<!-- Toolbox ends -->
+    <div class="box">
+      <p><label>Fill: <input id="fillBox" type="checkbox" checked="checked"></label></p>
+      <p><label>Line width: <input id="lineWidth" type="range" step="1" min="1" max="200" value="4"></label></p>
+    </div>
+
+    <div class="otherTools toolTextStyle box">
+      <div id="colorPalette" class="colorPalette">
+        <p><label>Fill Color: <input type="color" id="fillColor" class="colorButton red">
+        <p><label>Stroke Color: <input type="color" id="strokeColor" class="colorButton blue">
+        <p><label>Fill Canvas: <input type="color" id="backgroundColor" value="#ffffff"></label>
+      </div>
+    </div>
+    <div class="box sizes">
+      <p><label>Polygon Sides: <input type="range" id="polygonSides" step="1" min="3" max="10"></label></p>
+      <p><label>Polygon Angle: <input type="range" id="polygonAngle" step="22.5" min="0" max="90"></label></p>
+     
+    </div>
+  </div>
+
+<!-- canvas -->
+  <div id="col-lg-8"><canvas id="canvas" width="950px" height="500px" class="img-responsive">
+    your browser is crap if this text displays
+  </canvas></div>
+
+  <div class="lightBorder">
+        <p><input type="radio" name="lineCap" value="butt" checked="checked">butt</p>
+        <p><input type="radio" name="lineCap" value="round">round</p>
+    </div>
+  
+
+	  
+    <script src="jquery.min.js"></script>
+    <script src="bootstrap-3.3.7/dist/js/bootstrap.min.js"></script>
+    <script src="main.js"></script>
+
+
+  </body>
+</html>
